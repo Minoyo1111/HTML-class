@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>卡片式設計</title>
+  <style type="text/css">
+  .box{
+    width: 250px;
+    margin: 30px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    /* 動態效果 */
+    transition: 1s;
+    
+
+  }
+  .box .s{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    background-color: #fff;
+  }
+  .box img{
+    width: 100%;
+    transform: scale(1);
+        /* 不透明度 */
+    opacity: 1;
+    transition: 1s;
+ 
+  }
+  .box:hover{
+  
+    
+    }
+  .box:hover img{
+    transform: scale(1.2);
+    opacity: 0.3;
+    
+  }
+   .pic{
+    width: 150px;
+    height: 150px;
+    border: 3px solid red;
+
+    /* 超過的地方被藏起來 */
+    overflow: hidden;
+    /* overflow: visible; */
+    /* 圖片超過內容物會產生捲軸 */
+    /* overflow: auto; */
+    /* 強制顯示捲軸 */
+    /* overflow: scroll; */
+  }
+  .pic:hover img{
+    transform: scale(1.2);
+  }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <!-- picsum 另外一種假圖-->
+    <div class="s">
+    <img src="https://picsum.photos/300/200?random=12">
+  </div>
+    <h3>title</h3>
+    <p>行業平台協會其他的，你在社會主義競爭主角無疑加強習慣服務發表點此管理只不過我都，更好供應，每頁青春。</p>
+  </div>
+  <div class="pic">
+    <img src="https://picsum.photos/150/200/?random=1">
+  </div>
+</body>
+</html>
