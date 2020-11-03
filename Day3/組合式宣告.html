@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 同個目標不同選取器時沒有空格 */
+    /* 用於指定某個重複的選取器但不同標籤的狀態 */
+    /* 標籤永遠放第一個 */
+    /* 組合式宣告時，所有的分數都要算進去 */
+    /* 不會有進位的問題 */
+    /* 子代選取器的 ">" 不算分 */
+    div.box{
+      color: blue;
+    }
+    h1.box{
+      color: red;
+    }
+    /* 反向選取器，留下沒有的 */
+    h1:not([class]){
+      color: green;
+    }
+  </style>
+</head>
+<body>
+    <span class="box">span box</span>
+    <div class="box">span box</div>
+    <h1 class="box">span box</h1>
+    <section class="box">span box</section>
+    <h1>嗨</h1>
+</body>
+</html>

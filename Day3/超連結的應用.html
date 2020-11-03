@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style type="text/css">
+    /* 只針對a本身 */
+    a{
+      color: black;
+    }
+    /* 以下的順序要注意，優先權會蓋過去導致失效 依照需求處理*/
+
+    /* 他是超連結就會被選到，主要是看是否帶有href */
+    a:link{
+      color: red;
+    }
+    /* 拜訪過之後，主要辨識網址，相同網址都會變色*/
+    a:visited{ 
+      color: pink;
+    }
+
+    /* 摸到的時候 */
+    a:hover{
+      color: blue;
+    }
+    /* 按到的時候 */
+    a:active{
+      color: yellow;
+    }
+
+  </style>
+</head>
+<body>
+    <a >text</a>
+    <a href="">text</a>
+    <a href="https://tw.msn.com/">msn</a>
+    <a href="https://www.google.com/">google</a>
+    <a href="https://tw.yahoo.com/">yahoo</a>
+  
+</body>
+</html>
