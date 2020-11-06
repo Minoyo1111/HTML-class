@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+ 
+
+    .wrap{
+        background-color: #a22;
+        text-align: center;
+    }
+    
+    nav{
+      background-color: black;
+      text-align: center;
+    }
+    nav a{
+      display: inline-block;
+      /* 高度40px需要算font-size */
+      /* margin: 0px 15px; */
+      /* font-size: 16px; */
+      text-decoration: none;
+      /* text-align: center; */
+      color: #fff;
+      /* 如果不想算字的高度就用 */
+      /* line-height: 20px; */
+      padding: 10px 5px;
+      
+    }
+    /* 做出選單的中間線條 */
+    a + a{
+        border-left: 1px solid #fff;
+        /* 格線不會頂天立地 */
+        padding: 0px 15px;
+        
+      }
+
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <!-- logo要有超連結 -->
+    <a href="#">
+      <img src="https://picsum.photos/150/30/?random=1">
+    </a>
+  </div>
+    <nav>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+      <a href="#">link</a>
+    </nav>
+
+    
+  
+</body>
+</html>
