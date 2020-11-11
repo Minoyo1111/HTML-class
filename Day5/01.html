@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .wrap{
+      height: 900px;
+      background-color: #ccc;
+      display: flex;
+      /* flex-direction: column; */
+      /* flex-wrap: wrap;
+      justify-content: center;
+      /* align-items: flex-end; */
+      align-content: center; */
+    }
+
+    .item{
+      /* width: 100px; */
+      height: 100px;
+      flex-basis: 200px;
+      margin: 2px;
+      font-size: 20px;
+      color: #fff;
+      
+    }
+
+    .item1{
+      background-color: green;
+      /* order: 4; */
+      flex-grow: 2;
+
+    }
+    .item2{
+      background-color: #f00;
+      /* 可以針對2裡面的空間做移動
+      margin-left: auto; */
+      /* order: 0; */
+      /* flex-grow: 1; */
+    }
+    .item3{
+      background-color: #00f;
+      /* order: 1; */
+      /* margin-top: -48px; */
+      flex-grow: 1;
+    }
+    /* .item4{
+      background-color: #ff0;
+      order: 1;
+      margin-top: -48px;
+    }
+    .item5{
+      background-color: #0ff;
+      height: 150px;
+    }
+    .item6{
+      background-color: #f0f;
+      height: 50px;
+      order: 1; */
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <!-- <div class="item item4">4</div> 
+    <div class="item item5">5</div> 
+    <div class="item item6">6</div>  -->
+  </div>
+</body>
+</html>

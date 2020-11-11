@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .wrap{
+      width: 100%;
+      /* border: 1px red solid; */
+           
+      }
+
+    .data{
+      width: 900px;
+      margin: 150px auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .item{
+      position: relative;
+    }
+
+    .item h2{
+      font-size: 15px;
+
+    }
+
+    .item p{
+      font-size: 5px;
+    }
+
+
+    .txt{
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      padding: 60px 0px;
+      color: #fff;
+      line-height: 2em;
+      text-align: center;
+      background-color: rgba(0, 0, 255, .6);
+      opacity: 0;
+    }
+    .item:hover .txt{
+      opacity: 1;
+    }
+
+    img{
+      width: 100%;
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="data">
+    
+      <div class="item">
+          <img src="https://picsum.photos/300/200/?random=1">
+      
+      </div>
+        
+    
+      <div class="item">
+          <img src="https://picsum.photos/300/200/?random=2">
+          <div class="txt">
+            <p>MINING, STRATEGY</p>
+            <h2>GREATE BLOCKCHAIN EASILY</h2>
+          </div>
+        
+      </div>
+    
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=3">
+       
+      </div>
+      
+      <div class="item">
+        <img src="https://picsum.photos/300/200/?random=4">
+       
+      </div>
+    
+      <div class="item">  
+      <img src="https://picsum.photos/300/200/?random=5">
+ 
+    </div>
+      
+      <div class="item">
+      <img src="https://picsum.photos/300/200/?random=6">
+   
+    </div>
+    
+    </div>
+  </div>
+  
+</body>
+</html>

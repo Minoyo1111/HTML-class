@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+  *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  
+    .wrap{
+      width: 1400px;
+      height: 700px;
+      padding: 50px 100px;
+      display: flex;
+      background-color: #2C3139;
+      color: #fff;
+    }
+
+    .left{
+      width: 500px;
+    }
+    .left-txt{
+      margin: 20px;
+    }
+    h6 {
+      color: blue;
+      margin: 10px 0;
+      letter-spacing: 2px;
+    }
+
+    h2{
+      margin: 10px 0;
+      font-size: 40px;
+      letter-spacing: 1px;
+    }
+
+    p{
+      font-size: 15px;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+
+    }
+
+    .list{
+      margin-top: 40px;
+    }
+
+  .icon{
+    margin: 20px 5px;
+    display: flex;
+    font-size: 20px;
+         
+  }
+
+
+  .icon + .icon:hover{
+    color: #00ffff;
+  }
+  .icon span{
+      padding: 5px;
+  }
+
+  .icon img{
+      width: 30px;
+      height: 30px;
+      margin: 10px;
+      color:  #00ffff;
+  }
+
+  .right{
+      width: 900px;
+      padding-left: 150px;
+
+  }
+
+  .span{
+    margin: 40px 0;
+  }
+
+  .span p{
+    font-size: 20px;
+  }
+
+
+
+  input{
+      width: 600px;
+      height: 40px;
+      border: none;
+      background-color: #2C3139;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+  }
+
+  input:last-child{
+    height: 40px;
+  }
+
+
+  button{
+    color: #fff;
+    font-size: 15px;
+    padding: 20PX 30px;
+    background-color: #2800FE;
+    border-radius:50px;
+    margin: 5px;
+  }
+
+  button:hover{
+    background-color:  #00ffff;
+  }
+
+    
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="left">
+      <div class="left-txt">
+      <h6>GET IN TOUCH</h6>
+      <h2>Contact Details</h2>
+      <p>
+        If you are interested in working with us then please drop
+        us a line, we would love to hear from you.</p>
+      </div>
+
+      <div class="list">
+        <div class="icon">
+          <img src="mecca.png" alt="">
+          <span>121 Wallstreet Street, New York , USA</span>
+        </div>
+
+    
+        <div class="icon">
+          <img src="email.png" alt="">
+          <span>info@imperion.com</span>
+        </div>
+   
+        <div class="icon">
+          <img src="telephone.png" alt="">
+          <span>+800 1234 56 78</span>
+        </div>
+        
+      </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div class="right">
+      <h6>CONTACT US</h6>
+      <h2>Drop Us A Line</h2>
+      <div class="span">
+        <p>Name*</p>
+        <input type="text">
+      </div>
+
+      <div class="span">
+        <p>Email*</p>
+        <input type="text">
+      </div>
+
+      <div class="span last">
+        <p>Message</p>
+        <input type="text">
+      </div>
+
+      <div class="button">
+        <button>SEND MESSAGE</button>
+      </div>
+      
+    </div>
+  </div>
+  
+</body>
+</html>
