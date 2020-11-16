@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      word-spacing: 5px;
+    }
+    .wrap{
+      width: 1350px;
+      height: 500px;
+      display: flex;
+      margin: auto;
+     align-items: center;
+   
+    }
+    .item_img{
+     
+      width: 750px;
+    }
+    img{
+      width: 100%;
+      vertical-align: middle;
+    }
+
+    .txt{
+      width: 650px;
+      height: 300px;
+      
+      padding: 50px;
+    }
+
+    h4{
+      margin: 30px;
+      position: relative;
+      
+    }
+    h4::after{
+      content: "";
+      width: 55px;
+      border-bottom: blue 2px solid;
+      position: absolute;
+      bottom: -20px;
+      left: 0;
+    }
+    p{
+      font-size: 20px;
+      color: #aaa;
+      width: 500px;
+      margin: 50px 30px;
+    }
+
+    button{
+      width: 180px;
+      height: 60px;
+      margin: 0px 30px;
+      border-radius: 10px;
+    }
+    .contact{
+      border: steelblue .5px solid;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+    .contact:hover{
+      background-color: blue;
+      color: #fff;
+    }
+
+    .project{
+      background-color: blue;
+      color: #fff;
+      border: solid .5px blue;
+    }
+    .project:hover{
+      background-color: #fff;
+      color: #000;
+    }
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <div class="item_img">
+      <img src="https://ld-wp.template-help.com/wordpress_imperion/corporate/wp-content/uploads/2018/07/bg-phone-2-1-600x381.png" alt="筆電圖片">
+    </div>
+
+
+
+
+
+    <div class="txt">
+      <h4>
+        WE  ARE  AHEAD  OF  THE  MARKET
+        </h4>
+      <p>
+        We know how to stand out from your competitors and we gladly provide our clients with various keys to achieve their goals and become successful member of business environment.
+        </p>
+      <button class="contact">CONTACT US</button><button class="project">OUR PROJECT</button>
+
+    </div>
+
+
+  </div>
+</body>
+</html>
