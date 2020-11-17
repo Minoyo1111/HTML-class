@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        .item{
+            margin: 10px;
+            height: 200px;
+            background-color: red;
+        }
+        /* 在手機上一排畫面，在平板在桌機 */
+        @media screen and (min-width: 768px) {
+            .wrap{
+                /* width: 100%; */
+                display: flex;
+                flex-wrap: wrap;
+                }
+            .item{
+                width: calc(33.333333% - 20px)
+                
+            }
+            }
+        @media screen and (min-width: 992px) {
+        .wrap{
+            width: 960px;
+            margin: auto;
+            }
+       
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</body>
+</html>
