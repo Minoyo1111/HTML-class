@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            width: 100%;
+            margin: auto;
+            /* display: flex; */
+            flex-wrap: wrap;
+            
+            
+            
+
+        }
+        /* 用padding來假裝是margin */
+        .item{
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 15px;
+            margin-bottom: 10px;
+          
+            
+           
+        }
+        .inner{
+            /* background-color: #aaa; */
+            margin: 0 10px;
+        }
+
+        .item img{
+            width: 100%;
+        }
+
+        @media screen and (min-width: 768px){
+            .wrap{
+                display: flex;
+            }
+            .item{
+                width: 50%;
+            }
+
+        }
+        @media screen and (min-width: 992px){
+            .item{
+                width: 33.333333%;
+            }
+        }
+
+        @media screen and (min-width: 1200px){
+            .item{
+                width: 16.6666666%;
+            }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="item">
+            <div class="inner">
+                <img src="https://picsum.photos/300/200/?random=1">
+                <h2>標題</h2>
+                <p>支付讓我創新忍不住，內容簡介特價一起直播主是個任意，神秘特。</p>
+            </div>
+            
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="https://picsum.photos/300/200/?random=1">
+                <h2>標題</h2>
+                <p>支付讓我創新忍不住，內容簡介特價一起直播主是個任意，神秘特。</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="https://picsum.photos/300/200/?random=1">
+                <h2>標題</h2>
+                <p>支付讓我創新忍不住，內容簡介特價一起直播主是個任意，神秘特。</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="https://picsum.photos/300/200/?random=1">
+                <h2>標題</h2>
+                <p>支付讓我創新忍不住，內容簡介特價一起直播主是個任意，神秘特。</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="https://picsum.photos/300/200/?random=1">
+                <h2>標題</h2>
+                <p>支付讓我創新忍不住，內容簡介特價一起直播主是個任意，神秘特。</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="https://picsum.photos/300/200/?random=1">
+                <h2>標題</h2>
+                <p>支付讓我創新忍不住，內容簡介特價一起直播主是個任意，神秘特。</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
